@@ -64,7 +64,7 @@ class RecipeCard extends HTMLElement {
     
     article.innerHTML = '<img src="' + data['imgSrc'] + '" alt="' + data['imgAlt'] + '">';
     article.innerHTML = article.innerHTML + '<p class="title"> <a href="' + data['titleLnk'] + '">' + data['titleTxt'] + '</a></p>';
-    article.innerHTML = article.innerHTML + '<p class="organization">' + data['organization'] + '</p><div class="rating"> <span>'+ data['rating'] +'</span><img src="/assets/images/icons/' + data['rating'] + '-star.svg" alt="' + data['rating'] + ' stars"> <span>(' + data['numRatings'] + ')</span> </div>';
+    article.innerHTML = article.innerHTML + '<p class="organization">' + data['organization'] + '</p><div class="rating"> <span>'+ data['rating'] +'</span><img src="./assets/images/icons/' + data['rating'] + '-star.svg" alt="' + data['rating'] + ' stars"> <span>(' + data['numRatings'] + ')</span> </div>';
     article.innerHTML = article.innerHTML + '<time>' + data['lengthTime'] + '</time>';
     article.innerHTML = article.innerHTML + '<p class="ingredients">' + data['ingredients'] + '</p>';
     recipeCard.classList.add('finished');
